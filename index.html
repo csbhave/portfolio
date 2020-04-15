@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- external css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- bootstrap plugins -->
+    <link rel="stylesheet" href="./bootstrap4/css/bootstrap.css">
+    <!-- <script src="./bootstrap4/js/bootstrap.js"></script> -->
+    <!-- font plugins -->
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* header section start */
+    header{
+        border: none;
+        background-color: transparent;
+    }
+    ul{
+        list-style:none;
+    }
+    ul li a{
+        color: #313131;
+        text-transform: uppercase;
+    }
+    header .navbar ul li:first-child{
+        margin-left: 30px;
+    }
+    .navbar ul li:last-child{
+        padding-right: 8px;
+    }
+    .cv-btn{
+        padding-right: 50px;
+    }
+    .cv:hover{
+        padding: 8px 15px;
+        font-size: 20px;
+        transition: all 0.5s ease-in-out;
+        border-radius: 50px;
+    }
+    .navbar-expand-md .navbar-nav .nav-link{
+        font-weight: bold;
+    }
+    .navbar-toggler{
+        margin-right: 30px;
+    }
+    .navbar-expand-md .navbar-nav{
+            padding-left: 100px;
+        } 
+    /* header section end */
+
+    @media(max-width:1200px){
+        header .navbar ul li:first-child{
+            margin-left: 30px !important;   
+        }
+        header .navbar ul li{
+            margin-left: 0px;   
+        }
+        .navbar-expand-md .navbar-nav{
+            padding-left: 0px;
+        } 
+    }
+    @media(max-width:992px){
+    
+    /* header section start */
+      header,.container-fluid,.menu-container,nav{
+            padding: 0px 0px;
+        }
+        .navbar-brand{
+            margin-right: -10px;
+        }
+        .navbar-expand-md .navbar-nav .nav-link{
+            padding-left: 0px;
+        }
+        header .navbar ul li:first-child{
+            padding-left: 0px;
+        }
+        header .navbar ul li{
+            margin-left: 9px !important;   
+        }
+        .navbar ul li:last-child{
+        padding-right: 0px;
+    }
+    .navbar-expand-md .navbar-nav .nav-link{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .cv-btn{
+        margin-left: 10px;
+    }
+    /* header section end */
+
+    }
+</style>
+</head>
+<body>
+    <!-- start-header -->
+    <header>
+        <div class="container-fluid">
+            <div class="row ml-0 mr-0">
+                <div class="menu-container col-sm-12 pl-0 pr-0">
+                    <nav class="navbar navbar-expand-md navbar-light pl-0 pr-0">
+                        <a class="navbar-brand" href="#"><img src="./images/logo.png" alt=""></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>                      
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                          <ul class="navbar-nav mr-auto ml-0 mt-1 mt-lg-1">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Portfolio</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">skills</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Work</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                              </li>
+                          </ul>
+                          <form class="cv-btn form-inline mr-2 my-2 my-lg-0">
+                            <button class="cv btn btn-outline-success my-2 my-sm-0" type="submit">Download CV</button>
+                          </form>
+                        </div>
+                      </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+
+    </section>
+    <!-- end-header -->
+    <!-- start-home -->
+            
+    </body>
+</html>
