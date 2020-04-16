@@ -121,7 +121,7 @@ html{
     background-color: aliceblue;
     
 }
-.home .container-fluid{
+.home .container{
     margin-top: 50px;
 }
 .home-h1,.home-h2{
@@ -136,7 +136,7 @@ html{
     font-weight: 500;
     padding: 10px 0px;
 }
-.home .container-fluid .row .info{
+.home .container .row .info{
     padding: 100px 50px;
     
 }
@@ -180,12 +180,12 @@ html{
     box-shadow: 0 30px 50px rgb(0,0,0,0.5);
     cursor: pointer;
 }
-.skills .container-fluid .row .col-xl-3 h5{
+.skills .container .row .col-xl-3 h5{
     font-size: 25px;
     font-weight: 600;
     padding-top: 20px;        
 }
-.skills .container-fluid .row .col-xl-3 p{
+.skills .container .row .col-xl-3 p{
     padding: 20px 30px;    
 }
 span .fa{
