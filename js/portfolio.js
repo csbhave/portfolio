@@ -25,12 +25,17 @@ function topFunction() {
 }
 
 //toggle button
-var togglebtn = document.getElementById("myonoffswitch");
-
-function toggleState(item){
-    if(item.className == "on") {
-       item.className="off";
-    } else {
-       item.className="on";
-    }
- }
+  // Get the checkbox
+  function themeChange() {
+  var checkBox = document.getElementById("myonoffswitch");
+  var body = document.getElementById("body");
+  var info= document.getElementById("pinfo");
+  if (checkBox.checked == true){
+    body.style.background = "#fff";
+    body.style.color = "#333";
+    skillbox.style.color="000";    
+  } else {
+    body.style.background = "#333";
+    body.style.color = "#fff";
+  }
+}

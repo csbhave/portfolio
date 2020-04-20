@@ -8,32 +8,77 @@
     <!-- external css -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- bootstrap plugins -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <!-- font plugins -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap4/css/bootstrap.min.css ">
     <!-- fontawesome plugin -->
         <script src="https://kit.fontawesome.com/582ec155c3.js" crossorigin="anonymous"></script>
 
 <style>
+
+
+@media(max-width: 1250px) {
+        .social{
+            position: fixed;
+            left: 119%;
+        }
+    }
+    
+@media(max-width: 500px) {
+        .social{
+            position: fixed;
+            left: 144%;
+        }
+    }
+    
+    
 </style>
 </head>
-<body onload="myFunction()">
+<body onload="myFunction()" id="body">
     <div class="container-fluid" id="cf">
         <div id="loading">
             <span>loading...</span>
         </div>    
     </div>
+    <!-- social menu start -->
+    <div class="social">
+        <ul>
+            <li class="twitter">
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter 
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li class="facebook">
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook 
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li class="google">
+                <a href="#"><i class="fa fa-google" aria-hidden="true"></i>Google 
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li class="instagram">
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram 
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- social menu end -->
+    
     <!-- start-header -->
     <header>
         <div class="container-fluid">
@@ -63,7 +108,7 @@
                               </li>
                           </ul>
                           <div class="onoffswitch">
-                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" onclick="themeChange()" checked>
                             <label class="onoffswitch-label" for="myonoffswitch">
                                 <span class="onoffswitch-inner"></span>
                                 <span class="onoffswitch-switch"></span>
@@ -211,35 +256,35 @@
                         <div class="info">
                             <div class="list">
                                 <label for="">Birthday: </label>
-                                <p>13th Dec 1994</p>
+                                <p id="pinfo">13th Dec 1994</p>
                             </div>
                             <div class="list">
                                 <label for="">Email: </label>
-                                <p>csbhave07@gmail.com</p>
+                                <p id="pinfo">csbhave07@gmail.com</p>
                             </div>
                             <div class="list">
                                 <label for="">Age: </label>
-                                <p>24 yr</p>
+                                <p id="pinfo">24 yr</p>
                             </div>
                             <div class="list">
                                 <label for="">Phone No: </label>
-                                <p>+91-8237348490</p>
+                                <p id="pinfo">+91-8237348490</p>
                             </div>
                             <div class="list">
                                 <label for="">Residence: </label>
-                                <p>India</p>
+                                <p id="pinfo">India</p>
                             </div>
                             <div class="list">
                                 <label for="">insta: </label>
-                                <p><a href="" style="text-decoration: none; color: #838383;">cs_bhave11</a></p>
+                                <p id="pinfo"><a href="" style="text-decoration: none; color: #838383;">cs_bhave11</a></p>
                             </div>
                             <div class="list">
                                 <label for="">Address: </label>   
-                                <p>Pune</p>
+                                <p id="pinfo">Pune</p>
                             </div>
                             <div class="list">
                                 <label for="">Freelance: </label>
-                                <p>Available</p>
+                                <p id="pinfo">Available</p>
                             </div>
                             <div class="social-links">
                                 <a href=""><i class="fa fa-facebook"></i></a>

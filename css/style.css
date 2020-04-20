@@ -100,6 +100,69 @@ html{
         }
     }
 /*loading end*/
+
+/* social menu start */
+.social{
+    position: fixed;
+    top: 30%;
+    left:114%;
+}
+.social ul{
+    list-style-type: none;
+    padding: 0;
+    transform: translateX(-270px);
+}
+.social ul li{
+    display: block;
+    margin: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-align: left;
+    padding: 10px;
+    border-radius: 30px 30px 0px;
+    transition: all 1s;
+}
+.social ul li:hover{
+    transform: translateX(-110px);
+}
+.social ul li.twitter:hover{
+    background: #55acee;
+}
+.social ul li.facebook:hover{
+    background: #3d5999;
+}
+.social ul li.google:hover{
+    background: orange;
+}
+.social ul li.instagram:hover{
+    background: #e4405f;
+}
+.social ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.social ul li i{
+    text-align: center;
+    margin: 0 14px;
+
+    color: #000;
+    background: #fff;
+    padding: 1px;
+    border-radius: 30%;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    transform: rotate(0deg);
+    line-height: 40px;
+}
+
+.social ul li:hover i{
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+
+/* social menu end */
+
 /* header section start */
     header{
         position: fixed;
@@ -257,7 +320,6 @@ html{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
 }
 .home .container{
     margin-top: 20px;
@@ -358,11 +420,9 @@ span .fa{
    /* skill start */
    .skills{
     padding-top: 110px;
-    background-color: #333;
     
 }
 .sk-h1{
-    color: #fff;
 }
 
 .sk-h1::after{
@@ -381,7 +441,6 @@ span .fa{
 }
 .skill-box{
     padding: 1rem;
-    color: #ddd;
     cursor: pointer;
     text-align: -webkit-center;
 }
@@ -431,7 +490,6 @@ cursor: pointer;
 }
 
  h3{
-    color: #fff;
     margin: 0.5rem;
 }
 .skill-icon{
@@ -468,13 +526,11 @@ cursor: pointer;
             font-size: 25px;
             font-weight: 600;
             margin: 0 0 5px;
-            color: #000; 
         } 
         .about .container .about-content .info-box h6{
             font-size: 18px;
             font-weight: 500;
             margin: 0 0 15px;
-            color: #000; 
         }
         .about .container .about-content .info-box h6 span{
             color: #febd01;
@@ -483,8 +539,8 @@ cursor: pointer;
             font-size: 15px;
             font-weight: 400;
             line-height: 24px;
-            color: #838383;
             margin: 0 0 20px;
+            
         } 
         .about .container .about-content .img-box{
             margin-right: 40px;
@@ -506,7 +562,6 @@ cursor: pointer;
         }
         .about .container .about-content .info-box .info .list label{
             padding-right: 10px;
-            color: #000;
             font-weight: 600;
             font-size: 15px;
         }
@@ -515,8 +570,7 @@ cursor: pointer;
             font-size: 15px;
             font-weight: 400;
             line-height: 24px;
-            color: #838383;
-    
+            color: #838383;   
         }
         .about .container .about-content .info-box .info .social-links{
             padding-top: 30px;
@@ -545,6 +599,7 @@ cursor: pointer;
             transition: all .5s ease;
         }
         /* about end */
+        
     /* contact start */
 .contact{
     padding-top: 110px;
@@ -729,6 +784,12 @@ border-radius: 50%;
 /* responsiveness */
 
 @media(max-width:1250px){
+    /* social start */
+    .social{
+        position: fixed;
+        left: 119%;
+    }    
+    /* social end */
     /* header section start */
     .navbar-light .navbar-brand{
         margin: 0;
@@ -807,4 +868,11 @@ border-radius: 50%;
         margin-bottom: 60px;
     }    
  /* contact end */
+
+ /* social start */
+ .social{
+    position: fixed;
+    left: 132%;
+}
+ /* social end */
 }
