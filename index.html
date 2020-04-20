@@ -3,57 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <title>C.$.BHAVE</title>
     <!-- external css -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- bootstrap plugins -->
-    <link rel="stylesheet" href="./bootstrap4/css/bootstrap.css">
-    <!-- <script src="./bootstrap4/js/bootstrap.js"></script> -->
-    <!-- font plugins -->
 
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- font plugins -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <!-- fontawesome plugin -->
         <script src="https://kit.fontawesome.com/582ec155c3.js" crossorigin="anonymous"></script>
 
 <style>
-
 </style>
 </head>
-<body>
+<body onload="myFunction()">
+    <div class="container-fluid" id="cf">
+        <div id="loading">
+            <span>loading...</span>
+        </div>    
+    </div>
     <!-- start-header -->
     <header>
         <div class="container-fluid">
             <div class="row ml-0 mr-0">
                 <div class="menu-container col-sm-12 pl-0 pr-0">
                     <nav class="navbar navbar-expand-md navbar-light pl-0 pr-0">
-                        <a class="navbar-brand" href="#"><img src="./images/logo.png" alt=""></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <a class="navbar-brand" href="#"><img src="./images/port2.png" alt=""></a>
+                        <button class="navbar-toggler navbar-light bg-light" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                         </button>                      
                         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                           <ul class="navbar-nav mr-auto ml-0 mt-1 mt-lg-1" id="ul">
                             <li class="nav-item active">
-                              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                              <a class="nav-link text-center" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li> 
+                            <li class="nav-item text-center">
+                              <a class="nav-link" href="#service">Services  </a>
                             </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#skills">Skills</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Portfolio</a>
-                              </li>
-                              <li class="nav-item">
+                            <li class="nav-item text-center">
+                                <a class="nav-link" href="#skills">Skills</a>
+                              </li> 
+                              <li class="nav-item text-center">
                                 <a class="nav-link" href="#about">about</a>
                               </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Work</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                              <li class="nav-item text-center">
+                                <a class="nav-link" href="#contact">Contact</a>
                               </li>
                           </ul>
-                          <form class="cv-btn form-inline mr-2 my-2 my-lg-0">
-                            <button class="cv  my-2 my-sm-0" type="submit">Theme</button>
-                          </form>
+                          <div class="onoffswitch">
+                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                            <label class="onoffswitch-label" for="myonoffswitch">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
                         </div>
+                       </div>
                       </nav>
                 </div>
             </div>
@@ -62,7 +78,8 @@
     <!-- end-header -->
     
     <!-- start-home -->
-    <section class="home" id="home">
+    <section class="home" id="home" style="background-image: url('./images/cover.jpg');">
+        <div class="overlay"></div>
         <div class="container">
             <div class="row ml-0 mr-0">
                 <div class="info col-md-6 col-xl-6 col-sm-12 text-center">
@@ -75,51 +92,226 @@
                         </p> 
                     </div>
                     <div class="button">
-                        <button class="btn-lm btn btn-info">Learn More</button>
+                        <button class="btn-lm btn btn-info">Contact US</button>
                         <button class="btn-sw btn btn-success">Download CV</button>                   
                     </div>
-                </div>
-                <div class="info-img col-md-6 col-xl-6 col-sm-12">
-                    <img src="./images/team-2.jpg" alt="image">
                 </div>
             </div>
         </div>
     </section>
     <!-- end-home -->
     
-    <!-- start-skills -->
-    <div class="skills" id="skills">
+    <!-- start-service -->
+    <section class="service" id="service">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-            <h1 class="ser-h1">Skills</h1>
+            <h1 class="ser-h1">What We Do</h1>
         </div>
     </div>
-        <div class="row skills-content ml-0 mr-0">
-            <div class="col-xl-3 col-md-6 col-sm-6">
+        <div class="row service-content ml-0 mr-0">
+            <div class="col-lg-3 col-md-6 col-sm-12">
                 <span><i class="fa fa-broom"></i></span>
                 <h5>website Design</h5>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis praesentium incidunt inventore nisi odio culpa amet est aut reiciendis quo expedita, error itaque molestias, iusto possimus tempore et dignissimos enim.</p>
+                <p>Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization.</p>
             </div>
-            <div class="col-xl-3 col-md-6 col-sm-6">
+            <div class="col-lg-3 col-md-6 col-sm-12">
                 <span><i class="fa fa-code"></i></span>
                 <h5>website Development</h5>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis praesentium incidunt inventore nisi odio culpa amet est aut reiciendis quo expedita, error itaque molestias, iusto possimus tempore et dignissimos enim.</p>
+                <p>Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web-based internet applications, electronic businesses, and social network services.</p>
             </div>
-            <div class="col-xl-3 col-md-6 col-sm-6">
+            <div class="col-lg-3 col-md-6 col-sm-12">
                 <span><i class="fa fa-lock"></i></span>
                 <h5>Security</h5>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis praesentium incidunt inventore nisi odio culpa amet est aut reiciendis quo expedita, error itaque molestias, iusto possimus tempore et dignissimos enim.</p>
+                <p>Hosting providers protect the server your website is on, not the website itself. You can think of the website-host relationship like an apartment building: management provides security for the whole building, but it’s up to each occupant to lock their door.</p>
             </div>
-            <div class="col-xl-3 col-md-6 col-sm-6">
+            <div class="col-lg-3 col-md-6 col-sm-12">
                 <span><i class="fa fa-cog"></i></span>
                 <h5>Maintenance</h5>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis praesentium incidunt inventore nisi odio culpa amet est aut reiciendis quo expedita, error itaque molestias, iusto possimus tempore et dignissimos enim.</p>
+                <p>Website maintenance is the act of regularly checking your website for issues and mistakes and keeping it updated and relevant. This should be done on a consistent basis in order to keep your website healthy, encourage continued traffic growth, and strengthen your SEO and Google rankings.</p>
             </div>
 
         </div>
     </div>    
-</div>
-    <!-- end-skills -->
-    </body>
+
+    </section>
+    <!-- end-service -->
+
+    <!-- skills-start -->
+    <section class="skills" id="skills">
+    <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                <h1 class="sk-h1">MY SKILLS</h1>
+            </div>
+        </div>
+            <div class="row skill-content ml-0 mr-0">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-5 skill-box">
+                    <div class="img"><img src="./images/branding/html.png" alt="" class="skill-icon"></div>
+                   <h3>Html 5</h3>
+                    <p>Hypertext Markup Language is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12  mb-5 skill-box">
+                    <div class="img"><img src="./images/branding/css3.png" alt="" class="skill-icon"></div>
+                    <h3>CSS 3</h3>
+                    <p>CSS3 is the latest version of the CSS specification. CSS3 adds several new styling features and improvements to enhance the web presentation capabilities. Note: Our CSS tutorial will help you to learn the fundamentals of the latest CSS3 language, from the basic to advanced topics step-by-step.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-5 skill-box">
+                    <div class="img"><img src="./images/branding/js.png" alt="" class="skill-icon"></div>
+                    <h3>JavaScript</h3>
+                    <p>JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-5 skill-box">
+                    <div class="img"><img src="./images/branding/php.png" alt="" class="skill-icon"></div>
+                    <h3>PHP</h3>
+                    <p>PHP is a popular general-purpose scripting language that is especially suited to web development. It was originally created by Rasmus Lerdorf in 1994; the PHP reference implementation is now produced by The PHP Group.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-5 skill-box">
+                    <div class="img"><img src="./images/branding/mysql.png" alt="" class="skill-icon"></div>
+                    <h3>MYSQL</h3>
+                    <p>MySQL is an open-source relational database management system. Its name is a combination of "My", the name of co-founder Michael Widenius's daughter, and "SQL", the abbreviation for Structured Query Language.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-5 skill-box">
+                    <div class="img"><img src="./images/branding/wordpress.png" alt="" class="skill-icon"></div>
+                    <h3>wordPRESS</h3>
+                    <p>WordPress is a free and open-source content management system written in PHP and paired with a MySQL or MariaDB database. Features include a plugin architecture and a template system, referred to within WordPress as Themes.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-5 skill-box">
+                    <div class="img"><img src="./images/branding/jquery.png" alt="" class="skill-icon"></div>
+                    <h3>jquery</h3>
+                    <p>jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax. It is free, open-source software using the permissive MIT License. As of May 2019, jQuery is used by 73% of the 10 million most popular websites.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-5 skill-box">
+                    <div class="img"><img src="./images/branding/bootstrap4.png" alt="" class="skill-icon"></div>
+                    <h3>BootStrap4</h3>
+                    <p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.</p>
+                </div>
+    
+            </div>
+        </div> 
+    </section>
+    <!-- skills-end -->
+    
+    <!-- about start -->
+    <section class="about" id="about">
+        <div class="container" >
+                <div class="row">
+                    <div class="col-12 text-center">
+                    <h1 class="abt-h1">About US</h1>
+                </div>
+            </div>
+                <div class="row about-content ml-0 mr-0">
+                    <div class="col-lg-4 col-md-4 col-sm-12 mb-5 img-box">
+                    <img src="./images/cover2.jpg" alt="">
+                    </div>
+                    <div class="col-lg-7 col-md-7 col-sm-12 mb-5 info-box" >
+                        <h4>I'M Chinmay Bhave</h4>
+                        <h6>A Lead <span>UX & UI</span> designer based in <span>India</span></h6>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                        <div class="info">
+                            <div class="list">
+                                <label for="">Birthday: </label>
+                                <p>13th Dec 1994</p>
+                            </div>
+                            <div class="list">
+                                <label for="">Email: </label>
+                                <p>csbhave07@gmail.com</p>
+                            </div>
+                            <div class="list">
+                                <label for="">Age: </label>
+                                <p>24 yr</p>
+                            </div>
+                            <div class="list">
+                                <label for="">Phone No: </label>
+                                <p>+91-8237348490</p>
+                            </div>
+                            <div class="list">
+                                <label for="">Residence: </label>
+                                <p>India</p>
+                            </div>
+                            <div class="list">
+                                <label for="">insta: </label>
+                                <p><a href="" style="text-decoration: none; color: #838383;">cs_bhave11</a></p>
+                            </div>
+                            <div class="list">
+                                <label for="">Address: </label>   
+                                <p>Pune</p>
+                            </div>
+                            <div class="list">
+                                <label for="">Freelance: </label>
+                                <p>Available</p>
+                            </div>
+                            <div class="social-links">
+                                <a href=""><i class="fa fa-facebook"></i></a>
+                                <a href=""><i class="fa fa-twitter"></i></a>
+                                <a href=""><i class="fa fa-instagram"></i></a>
+                                <a href=""><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+        </div>
+    </section>
+<!-- about end -->
+
+<!-- contact start -->
+<section class="contact" id="contact">
+    <div class="container">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h1 class="con-h1">Contact US</h1>
+        </div>
+        <div class="col-lg-5 col-sm-12 ml-2 mr-2" id="panel">
+                <h2 class="mb-3 mt-2 text-center">Get In Touch</h2>
+            <form>
+                <div class="group">
+                    <input type="text" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Name</label>
+                </div>        
+                <div class="group">
+                    <input type="text" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Email</label>
+                </div>            
+                <div class="group">
+                    <input type="text" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Mobile No</label>
+                </div>           
+                <div class="group">
+                     <input type="text" required>
+                     <span class="highlight"></span>
+                     <span class="bar"></span>
+                     <label>Message</label>
+                </div>
+                <div class="group">
+                    <center> <button type="submit" class="btn btn-warning">Send <span class="glyphicon glyphicon-send"></span></button></center>
+                </div>
+            </form>
+            </div>
+                <div class="col-lg-6 col-sm-12" id="location">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7566.966974865509!2d73.85666312213985!3d18.507041073687724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c06b42cb6a97%3A0x5bfcc82377633d1e!2sGuruwar%20Peth%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1587276945696!5m2!1sen!2sin" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>   
+        </div>
+</section> 
+<!-- contact end -->
+
+<!-- Footer start -->
+<footer class="page-footer font-small pt-0">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">Copyrights © 2020 All rights reserved | This Website is made with by
+      <a href="#">C.S.BHAVE</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer end -->
+  <button id="myBtn" onclick="topFunction()"><i class="fas fa-arrow-up"></i></button>
+  <script src="./js/portfolio.js"></script>
+</body>
 </html>

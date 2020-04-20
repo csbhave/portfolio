@@ -1,44 +1,36 @@
-const fb= document.querySelector("#filter-btns").children;
-const pg= document.querySelector(".portfolio-gallery").children;
 
-for(let i=0;i<fb.length;i++){
-    fb[i].addEventListener("click",function(){
-        for(let j=0;j<fb.length;j++){
-            fb[j].classList.remove("active")
-        }
-        this.classList.add("active")
-        const target = this.getAttribute("data-target")
-        
-        for(let k=0;k<pg.length;k++){
-            pg[k].style.display="none"
-            if(target==pg[k].getAttribute("data-id")){
-                pg[k].style.display="block"
-                
-            }
-            if(target=="all"){
-                pg[k].style.display="block"
-            }
-            
-        }
-    
-    })
+// loading page
+var preloader = document.getElementById('cf');
+
+function myFunction(){
+    preloader.style.display="none";  
 }
 
-const closelb= document.querySelector(".close-lightbox");
-const lightbox= document.querySelector(".lightbox");
+// top button
+var mybutton = document.getElementById("myBtn");
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
 
-closelb.addEventListener("click",function(){
-    lightbox.classList.remove("show")
-    lightbox.classList.add("hide")
-})
+function scrollFunction() {  
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
-const gallery= document.querySelector(".portfolio-gallery");
-const galleryItem =gallery.querySelectorAll(".item");
+//toggle button
+var togglebtn = document.getElementById("myonoffswitch");
 
-galleryItem.forEach(function(element){
-    element.querySelector(".fa-plus").addEventListener("click",function(){
-        lightbox.classList.remove("hide")
-        lightbox.classList.add("show")
-    })
-})
-
+function toggleState(item){
+    if(item.className == "on") {
+       item.className="off";
+    } else {
+       item.className="on";
+    }
+ }
