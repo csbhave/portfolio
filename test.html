@@ -6,12 +6,86 @@
     <!-- fontawesome plugin -->
     <script src="https://kit.fontawesome.com/582ec155c3.js" crossorigin="anonymous"></script>
     <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0&appId=248126586564494&autoLogAppEvents=1"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0&appId=248126586564494&autoLogAppEvents=1"></script>
 <style>
+
+/* home section start */
+.home{
+    padding: 100px 0px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+}
+.home .container{
+    margin-top: 20px;
+}
+.home-h1,.home-h2{
+    letter-spacing: 2px;
+    font-size: 45px;
+    text-transform: uppercase;        
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: italic;
+    color: #fff;    
+}
+.home-h6,.home-p{
+    color: rgb(127,255,0);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 30px 0px;
+}
+.btn-lm{
+    margin-left: -40px;
+    padding: 5px 20px;
+    font-size: 20px;
+    z-index: 2;
+}
+.btn-sw{
+    margin-left: 10px;
+    padding: 5px 25px;
+    font-size: 20px;
+    z-index: 2;
+}
+
+/* home section end */
+
 </style>
 </head>
 <body>
 
-    <a href="./files/Resume.pdf" download="resume">Download CV</a>
+    <!-- start-home -->
+    <section class="home" id="home">
+        <div class="overlay" id="overlay">
+        </div>
+        <div class="container">
+            <div class="row ml-0 mr-0">
+                <div class="info col-md-6 col-xl-6 col-sm-12 text-center">
+                    <div class="info-content text-left">
+                        <h6 class="home-h6">Get Every Single Solution</h6>
+                        <h1 class="home-h1">I'm A Software Developer</h1>
+                        <h1 class="home-h1">Chinmay S. Bhave</h1>
+                        <p class="home-p">
+                            We are Build Beautiful And Responsive Websites These Websites makes your work easier  
+                        </p> 
+                    </div>
+                    <div class="button" style="z-index: 2;">
+                        <a href="#contact" class="btn-lm btn btn-info">Contact US</button>
+                        <a href="./files/Resume.pdf" download="Resume" class="btn-sw btn btn-success">Download CV</a>                   
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+        <script src="./js/homepage.js"></script>
+    </section>
+    <!-- end-home -->
+    </div>
 </body>
 </html> 

@@ -25,7 +25,9 @@
         <script src="https://kit.fontawesome.com/582ec155c3.js" crossorigin="anonymous"></script>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0&appId=248126586564494&autoLogAppEvents=1"></script>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-   <style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+   
+  <style>
     
 </style>
 </head>
@@ -106,9 +108,10 @@
     </header>
     <!-- end-header -->
     
-    <!-- start-home -->
-    <section class="home" id="home" style="background-image: url('./images/cover.jpg');">
-        <div class="overlay"></div>
+       <!-- start-home -->
+       <section class="home" id="home">
+        <div class="overlay" id="overlay">
+        </div>
         <div class="container">
             <div class="row ml-0 mr-0">
                 <div class="info col-md-6 col-xl-6 col-sm-12 text-center">
@@ -128,8 +131,11 @@
                 </div>
             </div>
         </div>
+        <script src="./js/homepage.js"></script>
     </section>
     <!-- end-home -->
+    </div>
+
     
     <!-- start-service -->
     <section class="service" id="service">
@@ -343,5 +349,6 @@
   <!-- Footer end -->
   <button id="myBtn" onclick="topFunction()"><i class="fas fa-arrow-up"></i></button>
   <script src="./js/portfolio.js"></script>
+  <script src="./js/homepage.js"></script>
 </body>
 </html>
