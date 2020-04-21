@@ -327,8 +327,9 @@ body{
 
 /* home section start */
 .home{
-    padding: 100px 0px;
-    position: absolute;
+    padding: 130px 0px;
+    background-image: linear-gradient(to left, #fff,#fff,#fff);
+    position: relative;
     left: 0;
     top: 0;
     right: 0;
@@ -338,12 +339,21 @@ body{
     background-attachment: fixed;
     z-index: 0;
 }
+.overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.8;
+    background: #1c1d21;
+}
 .home .container{
     margin-top: 20px;
 }
 .home-h1,.home-h2{
     letter-spacing: 2px;
-    font-size: 45px;
+    font-size: 30px;
     text-transform: uppercase;        
     font-weight: 700;
     font-family: 'Roboto Condensed', sans-serif;
@@ -578,32 +588,6 @@ cursor: pointer;
             line-height: 24px;
             color: #838383;   
         }
-        .about .container .about-content .info-box .info .social-links{
-            padding-top: 30px;
-        }
-        .about .container .about-content .info-box .info .social-links a{
-            height: 30px;
-            width: 30px;
-            background-color: #000; 
-            border-radius: 3px;
-            display: inline-block;
-            border: 1px solid #000;
-            line-height: 24px;
-            text-align: center;
-            margin: 0 1px;
-            -webkit-transition: all 0.5s ease;
-            transition: all .5s ease;
-            margin-left: 10px;
-        }
-    
-        .about .container .about-content .info-box .info .social-links a:hover{
-            background-color: transparent;
-        }
-        .about .container .about-content .info-box .info .social-links a .fa{
-            font-size: 12px;
-            -webkit-transition: all .5s ease;
-            transition: all .5s ease;
-        }
         /* about end */
         
     /* contact start */
@@ -773,6 +757,7 @@ min-width: 200px;
 
 /* top button start */
 #myBtn{
+    display: none;
     position: fixed;
 bottom: 60px;
 right: 40px;
