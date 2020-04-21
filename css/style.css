@@ -187,7 +187,7 @@ body{
         left: 0px;
         right: 0px;
         z-index: 1;
-        background: transparent;
+        background: rgba(0, 0, 0, 0.5);
     }
     header .brand-name{
         padding-left: 30px;
@@ -775,6 +775,10 @@ border-radius: 50%;
 /* responsiveness */
 
 @media(max-width:1250px){
+    
+    header{
+        background:rgba(0,0,0,0.9) !important;
+    }
     /* social start */
     .social{
         position: fixed;
@@ -784,7 +788,6 @@ border-radius: 50%;
     /* header section start */
     .navbar-light .navbar-brand{
         margin: 0;
-        
     }
     .navbar-light .navbar-brand img{
         width: 150px;
