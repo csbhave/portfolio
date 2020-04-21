@@ -27,8 +27,7 @@
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <!-- THREE.js plugin -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
-   
-  <style>
+<style>
     
 </style>
 </head>
@@ -134,7 +133,6 @@
         </div>
     </section>
     <!-- end-home -->
-    </div>
 
     
     <!-- start-service -->
@@ -146,22 +144,22 @@
         </div>
     </div>
         <div class="row service-content ml-0 mr-0">
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col-lg-3 col-md-6 col-sm-12" id="service-box">
                 <span><i class="fa fa-broom"></i></span>
                 <h5>website Design</h5>
                 <p>Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization.</p>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col-lg-3 col-md-6 col-sm-12" id="service-box">
                 <span><i class="fa fa-code"></i></span>
                 <h5>website Development</h5>
                 <p>Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web-based internet applications, electronic businesses, and social network services.</p>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col-lg-3 col-md-6 col-sm-12" id="service-box">
                 <span><i class="fa fa-lock"></i></span>
                 <h5>Security</h5>
                 <p>Hosting providers protect the server your website is on, not the website itself. You can think of the website-host relationship like an apartment building: management provides security for the whole building, but it’s up to each occupant to lock their door.</p>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col-lg-3 col-md-6 col-sm-12" id="service-box">
                 <span><i class="fa fa-cog"></i></span>
                 <h5>Maintenance</h5>
                 <p>Website maintenance is the act of regularly checking your website for issues and mistakes and keeping it updated and relevant. This should be done on a consistent basis in order to keep your website healthy, encourage continued traffic growth, and strengthen your SEO and Google rankings.</p>
@@ -295,33 +293,33 @@
         </div>
         <div class="col-lg-5 col-sm-12 ml-2 mr-2" id="panel">
                 <h2 class="mb-3 mt-2 text-center">Get In Touch</h2>
-            <form>
+            <form method="post" action="contact.php">
                 <div class="group">
-                    <input type="text" required>
+                    <input type="text" name="name" required>
                     <span class="highlight"></span>
                     <span class="bar"></span>
                     <label>Name</label>
                 </div>        
                 <div class="group">
-                    <input type="text" required>
+                    <input type="text" name="email" required>
                     <span class="highlight"></span>
                     <span class="bar"></span>
                     <label>Email</label>
                 </div>            
                 <div class="group">
-                    <input type="text" required>
+                    <input type="text" name="mobileno" required>
                     <span class="highlight"></span>
                     <span class="bar"></span>
                     <label>Mobile No</label>
                 </div>           
                 <div class="group">
-                     <input type="text" required>
+                     <input type="text" name="message" required>
                      <span class="highlight"></span>
                      <span class="bar"></span>
                      <label>Message</label>
                 </div>
                 <div class="group">
-                    <center> <button type="submit" class="btn btn-warning">Send <span class="glyphicon glyphicon-send"></span></button></center>
+                    <center> <button type="submit" name="submit" id="submit" class="btn btn-warning">Send <span class="glyphicon glyphicon-send"></span></button></center>
                 </div>
             </form>
             </div>
@@ -344,5 +342,9 @@
   <!-- Footer end -->
   <button id="myBtn" onclick="topFunction()"><i class="fas fa-arrow-up"></i></button>
   <script src="./js/portfolio.js"></script>
+    <!-- sweetalert2.js plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>		
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
 </body>
 </html>
