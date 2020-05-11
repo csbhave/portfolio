@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <title>C.S.Bhave</title>
+    <!-- external css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/radio.css">
+    <link rel="stylesheet" href="./css/animate.css">
+
+    
+    <!-- bootstrap plugins -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap4/css/bootstrap.min.css ">
+    
+    <!-- fontawesome plugin -->
+        <script src="./fontawesome/fontawesome.js"></script>
+  
+        <!-- facebook plugin -->
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0&appId=248126586564494&autoLogAppEvents=1"></script>
+    <!-- twitter plugin -->
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <!-- THREE.js plugin -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script> -->
+<style>
+   
+</style>
+</head>
+<body onload="myFunction()" id="body">
+    <div class="container-fluid" id="cf">
+        <div id="loading">
+            <span>loading...</span>
+        </div>    
+    </div>
+<!-- social menu start -->
+    <div class="social">
+      <!-- <ul style="position: relative;">
+            <li>
+            <div id="RMKrOcK6w5I/w6dbIynCsMK+UMK7JMKkwq3DtEXDhic=" class="mytuner-widget" data-target="395596" data-requires_initialization="true" data-autoplay="true" data-hidehistory="true" style="width: 100%; max-width: 500px; overflow: hidden; max-height: 500px; border: 1px solid rgb(129, 127, 128); border-radius: 6px;">
+                <div id="RMKrOcK6w5I/w6dbIynCsMK+UMK7JMKkwq3DtEXDhic=top-bar" style="background: rgb(18, 18, 30); height: 75px; width: 100%; display: block; padding: 5px; line-height: 65px;">
+                    <div id="RMKrOcK6w5I/w6dbIynCsMK+UMK7JMKkwq3DtEXDhic=play-button" class="main-play-button disabled" data-id="RMKrOcK6w5I/w6dbIynCsMK+UMK7JMKkwq3DtEXDhic=">
+                        <div class="play-image"></div>
+                    </div>
+                    <div class="volume-controls"><input id="RMKrOcK6w5I/w6dbIynCsMK+UMK7JMKkwq3DtEXDhic=volume-control" class="volume-control slider" max="100" min="1" orient="vertical" type="range" value="100">
+                        <svg id="RMKrOcK6w5I/w6dbIynCsMK+UMK7JMKkwq3DtEXDhic=volume-indicator" class="volume-indicator" height="30" width="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="fill: grey; margin: 2px;">
+                            <path d="M3 10v4c0 .55.45 1 1 1h3l3.29 3.29c.63.63 1.71.18 1.71-.71V6.41c0-.89-1.08-1.34-1.71-.71L7 9H4c-.55 0-1 .45-1 1zm13.5 2c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 4.45v.2c0 .38.25.71.6.85C17.18 6.53 19 9.06 19 12s-1.82 5.47-4.4 6.5c-.36.14-.6.47-.6.85v.2c0 .63.63 1.07 1.21.85C18.6 19.11 21 15.84 21 12s-2.4-7.11-5.79-8.4c-.58-.23-1.21.22-1.21.85z">
+                            </path>
+                        </svg>
+                    </div>
+                    <a class="player-radio-link disable" class="" href="" rel="noopener" style="margin-left: 50px; height: 100%; display: inline-block; line-height: 65px; cursor: pointer;">
+                        <img src="https://mytuner.global.ssl.fastly.net/media/tvos_radios/cVVcTMJBcm.png" alt="Radio Mirchi 98.3 FM" style="float: left; height: 74px; margin-top: -5px; box-shadow: black 0px 0px 3px -1px;">
+                        <span class="player-radio-name" style="margin-left: 10px; color: rgb(255, 255, 255); font-weight: bold; font-size: 20px; float: left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Radio Mirchi 98.3 FM</span>
+                    </a>
+                    <a class="player-mytuner-logo" href="https://mytuner-radio.com?utm_source=widget&amp;utm_medium=player" rel="noopener" target="_blank" style="display: inline-block; vertical-align: top;">
+                        <img src="https://mytuner-radio.com/static/icons/widgets/MyTuner_Logo/MyTunerLogo_White.png" alt="Listen on myTuner radio!" style="height: 36px; width: 84px; vertical-align: middle;">
+                    </a>
+                </div>
+                <ul id="RMKrOcK6w5I/w6dbIynCsMK+UMK7JMKkwq3DtEXDhic=song-history" data-border="1" data-bordercolor="#817f80" style="width: 100%; background-color: rgb(238, 238, 238); max-height: calc(415px); padding: 0px; margin: 0px; overflow-y: scroll;">
+                </ul>
+            </div>
+            </li>
+        </ul> -->
+        <ul>
+            <li class="twitter">
+                <a href="https://twitter.com/chinmaybhave4?ref_src=twsrc%5Etfw" data-show-count="false"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter 
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li class="facebook">
+                <a href="https://www.facebook.com/CSBhave-104388584588893/?modal=admin_todo_tour"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook 
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li class="linkedin">
+                <a href="https://www.linkedin.com/in/chinmay-bhave-20690a19a"><i class="fa fa-linkedin" aria-hidden="true"></i>Linkedin 
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li class="instagram">
+                <a href="https://www.instagram.com/cs_bhave11/"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram 
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- social menu end -->
+    <!-- start-header -->
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row ml-0 mr-0">
+                <div class="menu-container col-sm-12 pl-0 pr-0">
+                    <nav class="navbar navbar-expand-md navbar-light pl-0 pr-0" id="navbar">
+                        <a class="navbar-brand" style="padding-left: 10px; color: #fff; font-size: 40px; font-style: italic;" href="http://csbhave.epizy.com">C.S.Bhave</a>
+                        <button class="navbar-toggler navbar-light bg-light" id="toggle-btn" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>                      
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                          <ul class="navbar-nav mr-auto ml-0 mt-1 mt-lg-1" id="ul">
+                            <li class="nav-item active">
+                              <a class="nav-link text-center" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li> 
+                            <li class="nav-item text-center">
+                              <a class="nav-link" href="#service">Services  </a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link" href="#skills">Skills</a>
+                              </li> 
+                              <li class="nav-item text-center">
+                                <a class="nav-link" href="#about">about</a>
+                              </li>
+                              <li class="nav-item text-center">
+                                <a class="nav-link" href="#contact">Contact</a>
+                              </li>
+                          </ul>
+                          <div class="onoffswitch">
+                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" onclick="themeChange()" checked>
+                            <label class="onoffswitch-label" for="myonoffswitch">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
+                       </div>
+                      </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end-header -->
+    
+       <!-- start-home -->
+       <section class="home" id="home" style="background-image: url('./images/cover.jpg');">
+        <div class="overlay" id="overlay">
+        </div>
+        <div class="container animated zoomIn delay-1s">
+            <div class="row ml-0 mr-0">
+                <div class="info col-md-6 col-xl-6 col-sm-12 text-center">
+                    <div class="info-content text-left">
+                        <h6 class="home-h6">Get Every Single Solution</h6>
+                        <h1 class="home-h1">I'm A Full Stack Developer</h1>
+                        <h1 class="home-h1">Chinmay S. Bhave</h1>
+                        <p class="home-p">
+                            The goal isn’t to build a website, It is to build your business.  
+                        </p> 
+                    </div>
+                    <div class="button" style="z-index: 2;">
+                        <a href="#contact" class="btn-lm btn btn-info"><i class="fas fa-pencil-alt"></i> Contact US</button>
+                        <a href="./files/Resume.pdf" download="Resume" class="btn-sw btn btn-success"><i class="fas fa-download"></i> Download CV</a>                   
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end-home -->
+
+    
+    <!-- start-service -->
+    <section class="service" id="service">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+            <h1 class="ser-h1">Services</h1>
+        </div>
+    </div>
+        <div class="row service-content ml-0 mr-0">
+            <div class="col-lg-3 col-md-6 col-sm-12 service-box" id="">
+                <span><i class="fa fa-code"></i></span>
+                <h5>Website Development</h5>
+                <p>Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web-based internet applications, electronic businesses, and social network services.</p>
+            </div>
+ <div class="col-lg-3 col-md-6 col-sm-12 service-box" id="">
+                <span><i class="fa fa-server"></i></span>
+                <h5>Website Deployment</h5>
+                <p>Deploying or pushing new code to a server is an integral part of a developer’s daily workflow. Knowing the relationship between your computer (including your local development environment) and the Internet, as well as how to communicate between the two, is essential for every developer.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 service-box" id="">
+                <span><i class="fa fa-lock"></i></span>
+                <h5>Security</h5>
+                <p>Hosting providers protect the server your website is on, not the website itself. You can think of the website-host relationship like an apartment building: management provides security for the whole building, but it’s up to each occupant to lock their door.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 service-box" id="">
+                <span><i class="fa fa-cog"></i></span>
+                <h5>Maintenance</h5>
+                <p>Website maintenance is the act of regularly checking your website for issues and mistakes and keeping it updated and relevant. This should be done on a consistent basis in order to keep your website healthy, encourage continued traffic growth, and strengthen your SEO and Google rankings.</p>
+            </div>
+
+        </div>
+    </div>    
+
+    </section>
+    <!-- end-service -->
+
+    <!-- skills-start -->
+    <section class="skills" id="skills">
+    <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                <h1 class="sk-h1">MY SKILLS</h1>
+            </div>
+        </div>
+            <div class="row skill-content ml-0 mr-0">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-5 skill-box">
+                    <div class="img"><img src="./images/branding/html.png" alt="" class="skill-icon"></div>
+                   <h3>Html 5</h3>
+                    <p>Hypertext Markup Language is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12  mb-5 skill-box">
+                    <div class="img"><img src="./images/branding/css3.png" alt="" class="skill-icon"></div>
+                    <h3>CSS 3</h3>
+                    <p>CSS3 is the latest version of the CSS specification. CSS3 adds several new styling features and improvements to enhance the web presentation capabilities. Note: Our CSS tutorial will help you to learn the fundamentals of the latest CSS3 language, from the basic to advanced topics step-by-step.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-5 skill-box">
+                    <div class="img"><img src="./images/branding/js.png" alt="" class="skill-icon"></div>
+                    <h3>JavaScript</h3>
+                    <p>JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-5 skill-box">
+                    <div class="img"><img src="./images/branding/php.png" alt="" class="skill-icon"></div>
+                    <h3>PHP</h3>
+                    <p>PHP is a popular general-purpose scripting language that is especially suited to web development. It was originally created by Rasmus Lerdorf in 1994; the PHP reference implementation is now produced by The PHP Group.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-5 skill-box">
+                    <div class="img"><img src="./images/branding/mysql.png" alt="" class="skill-icon"></div>
+                    <h3>MYSQL</h3>
+                    <p>MySQL is an open-source relational database management system. Its name is a combination of "My", the name of co-founder Michael Widenius's daughter, and "SQL", the abbreviation for Structured Query Language.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-5 skill-box">
+                    <div class="img"><img src="./images/branding/wordpress.png" alt="" class="skill-icon"></div>
+                    <h3>WORDPRESS</h3>
+                    <p>WordPress is a free and open-source content management system written in PHP and paired with a MySQL or MariaDB database. Features include a plugin architecture and a template system, referred to within WordPress as Themes.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-5 skill-box">
+                    <div class="img"><img src="./images/branding/jquery.png" alt="" class="skill-icon"></div>
+                    <h3>jquery</h3>
+                    <p>jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax. It is free, open-source software using the permissive MIT License. As of May 2019, jQuery is used by 73% of the 10 million most popular websites.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-5 skill-box">
+                    <div class="img"><img src="./images/branding/bootstrap4.png" alt="" class="skill-icon"></div>
+                    <h3>BootStrap4</h3>
+                    <p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.</p>
+                </div>
+    
+            </div>
+        </div> 
+    </section>
+    <!-- skills-end -->
+    
+    <!-- about start -->
+    <section class="about" id="about">
+        <div class="container" >
+                <div class="row">
+                    <div class="col-12 text-center">
+                    <h1 class="abt-h1">ABOUT ME</h1>
+                </div>
+            </div>
+                <div class="row about-content ml-0 mr-0">
+                    <div class="col-lg-4 col-md-4 col-sm-12 mb-5 img-box">
+                    <img src="./images/cover2.jpg" alt="">
+                    </div>
+                    <div class="col-lg-7 col-md-7 col-sm-12 mb-5 info-box" >
+                        <h6>A Lead <span>Full Stack Developer</span> based in <span>India</span></h6>
+                        <p class="tagline">If you can change your atttiude you can change your life</p>
+                            <p class="about-p">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                <q id="pinfo">&nbsp;My name is <b> CHINMAY BHAVE </b>. I'm graduated from Modern College Of Commerce. I live in PUNE. I have been working as a freelance Full Stack Developer from year 2019. I cannot say with 100% confidence where I see myself in five years or what my big career goal is. The world is changing rapidly However, I know that I can provide a fresh take and an extraordinary approach to every project. I am always open to challenges and constructive feedback. I'm open minded and learn new things quickly. I want to become a good Entrepreneur and dedicate all my skills and talents to develop high-quality and unique products.I believe that a person should work on developing their professional skills and learning new things all the time.
+                                </q>
+                            </p>   
+                        </div>
+                        
+                    </div>
+                </div>
+        </div>
+    </section>
+<!-- about end -->
+
+<!-- contact start -->
+<section class="contact" id="contact">
+    <div class="container">
+    <div class="row content-content">
+        <div class="col-12 text-center">
+            <h1 class="con-h1">CONTACT ME</h1>
+        </div>
+        <div class="col-lg-5 col-sm-12 ml-2 mr-2 contact-input" id="panel">
+                <h2 class="mb-3 mt-2 text-center">Get In Touch</h2>
+            <form method="post" action="contact.php">
+                <div class="group">
+                    <input type="text" name="name" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Name</label>
+                </div>        
+                <div class="group">
+                    <input type="text" name="email" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Email</label>
+                </div>            
+                <div class="group">
+                    <input type="text" name="mobileno" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Mobile No</label>
+                </div>           
+                <div class="group">
+                     <input type="text" name="message" required>
+                     <span class="highlight"></span>
+                     <span class="bar"></span>
+                     <label>Message</label>
+                </div>
+                <div class="group">
+                    <center> <button type="submit" name="submit" id="submit" class="btn btn-warning"><i class="fab fa-telegram-plane"></i> Send Message <span class="glyphicon glyphicon-send"></span></button></center>
+                </div>
+            </form>
+            </div>
+                <div class="col-lg-6 col-sm-12 contact-loc" id="location">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7566.966974865509!2d73.85666312213985!3d18.507041073687724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c06b42cb6a97%3A0x5bfcc82377633d1e!2sGuruwar%20Peth%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1587276945696!5m2!1sen!2sin" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>   
+        </div>
+</section> 
+<!-- contact end -->
+
+<!-- Footer start -->
+<footer class="page-footer font-small pt-0">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">Copyrights © 2020 All rights reserved | This Website is made by
+      <a href="http://csbhave.epizy.com">C.S.BHAVE</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer end -->
+  <button id="myBtn" onclick="topFunction()"><i class="fas fa-arrow-up"></i></button>
+ 
+  <script src="./js/portfolio.js"></script>
+  <script src="./js/radio.js"></script> 
+    <!-- sweetalert2.js plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>		
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="./js/animate.js"></script>
+</body>
+</html>
